@@ -15,11 +15,11 @@ Dependencies:
 BeatifulSoup4, Install using 
 
 
-'''sh
+```sh
 $ apt-get install python3-bs4
 
 $ pip install beautifulsoup4
-'''
+```
 
 
 EXE File Coming up Soon!
