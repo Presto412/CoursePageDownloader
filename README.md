@@ -15,7 +15,7 @@ Dependencies:
 BeatifulSoup4, Install using 
 
 
-'''shell
+'''sh
 $ apt-get install python3-bs4
 
 $ pip install beautifulsoup4
