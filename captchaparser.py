@@ -23,7 +23,7 @@ def CaptchaParse(img):
             match = 0
             black = 0
             pixx = 0
-            im2 = Image.open("Chars\\" + i)
+            im2 = Image.open(os.path.join("Chars", i))
             im2 = im2.convert('L')
             pix2 = im2.load()
             for y in range(0, 32):
@@ -40,9 +40,9 @@ def CaptchaParse(img):
                         black += 1
                     if pix1[x, y] == 0:
                         pixx += 1
-            if float(match) / float(black) >= 0.80:
-                perc = float(match) / float(black)
-                matches.update({perc: i[0].upper()})
+#             if float(match) / float(black) >= 0.80:
+            perc = float(match) / float(black)
+            matches.update({perc: i[0].upper()})
         try:
             captcha += matches[max(matches.keys())]
         except ValueError:
